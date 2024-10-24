@@ -1,0 +1,449 @@
+*{
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    background-color: white;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position:fixed ;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+}
+.logo{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100px;
+    font-size: 1.2rem;
+    & a{
+        color: rgb(255, 200, 0);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+    }
+}
+.nav-content{
+    display: flex;
+    column-gap: 2vw;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    padding: 0;
+    & a{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        position: relative;
+    }
+}
+.nav-content a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 200, 0);
+}
+.nav-content a:hover{
+    color: rgb(255, 200, 0);
+}
+.nav-content a:hover::before{
+  width: 100%;
+  color: rgb(255, 200, 0);
+}
+
+
+@media screen and (min-width:0px) and (max-width:320px) {
+    section{
+        width: 100vw;
+        height: 100%;
+    }
+    .logo{
+        width: 100vw;
+        position: absolute;
+        top: -20%;
+    }
+    .navigation{
+        height: 70px;
+        position: fixed;
+    }
+    .nav-content{
+        top: 50%;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+section{
+    background-color: #FABC3F;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*--------------------about--------------------------------------------*/
+
+.How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani{
+    margin-top: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+.How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani span{
+    text-transform: uppercase;
+    display: block;
+}
+.text1{
+    animation: text 2s ease-in-out infinite;
+}
+.text2{
+    animation: text 2s ease-in-out infinite;
+}
+@keyframes text {
+    0%{
+        letter-spacing: 0;
+    }
+    50%{
+        letter-spacing: 8px;
+    }
+    
+    100%{
+        letter-spacing: 0;
+    }
+}
+.box-pic{
+    margin-top: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+.title{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+.about-para{
+    text-align: center;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+.home-photo{
+    margin: 10px;
+    border-radius: 10px;
+    border: white solid 5px;
+    width: 300px; 
+    height: 200px;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.about-table{
+    margin: 20px ;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani{
+        padding: 20px;
+        margin-top: 120px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .about-para{
+        text-align: center;
+        padding: 20px;
+    }
+    .home-photo{
+        margin: 10px;
+        border-radius: 10px;
+        border: white solid 5px;
+        width: 150px;
+        height: 100px;
+    }
+    .about-table{
+        width: 300px;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:375px){
+    .How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani{
+        padding: 20px;
+        margin-top: 120px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .about-para{
+        text-align: center;
+        padding: 20px;
+    }
+    .home-photo{
+        margin: 10px;
+        border-radius: 10px;
+        border: white solid 5px;
+        width: 150px;
+        height: 100px;
+    }
+    
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+    .How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani{
+        padding: 20px;
+        margin-top: 120px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1rem;
+        color: black;
+        text-align: center;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .about-para{
+        text-align: center;
+        padding: 20px;
+    }
+    .home-photo{
+        margin: 10px;
+        border-radius: 10px;
+        border: white solid 5px;
+        width: 150px;
+        height: 100px;
+    }
+    
+}
+
+
+@media screen and (min-width:425px) and (max-width:768px){
+    .How-to-Make-the-Ultimate-Fluffy-and-Fragrant-Biryani{
+        padding: 20px;
+        margin-top: 120px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1.2rem;
+        color: black;
+        text-align: center;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    .about-para{
+        text-align: center;
+        padding: 20px;
+    }
+    .home-photo{
+        margin: 10px;
+        border-radius: 10px;
+        border: white solid 5px;
+        width: 170px;
+        height: 120px;
+    }
+    
+}
+
+
+/*-----------------------ingredients----------------------------------*/
+
+#Ingredients{
+    background-color: white;
+}
+.Ingredients-title{
+    padding-top: 35px;
+    color: chocolate;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+div.ingredients {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+ul.myUL {
+    display: inline-block;
+    text-align: left;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .Ingredients-title{
+        font-size: 1rem;
+        
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:375px){
+    .Ingredients-title{
+        font-size: 1rem;
+        
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+    .Ingredients-title{
+        font-size: 1rem;
+        
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px){
+    .Ingredients-title{
+        font-size: 1.2rem;
+        
+    }
+}
+
+
+
+
+/*--------------------------varieties-----------------------------------------*/
+
+.about-varieties {
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 1.5rem;
+}
+.variety-para{
+    text-align: center;
+}
+div.varieties {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.a-types{
+    color: black;
+    text-decoration: none;
+}
+.a-types:hover{
+    color: white;
+}
+ol.myOL {
+    display: inline-block;
+    text-align: left;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .about-varieties {
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (min-width:320px) and (max-width:375px){
+    .about-varieties {
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+    .about-varieties {
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (min-width:425px) and (max-width:768px){
+    .about-varieties {
+        font-size: 1.2rem;
+    } 
+}
+
+
+
+
+/*-----------------------reciep-----------------------------------------*/
+
+#Reciepe{
+    background-color: white;
+}
+.title-reciepe{
+    color: chocolate;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 35px;
+}
+.Try-this-recipe-too{
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
+}
+.para-reciepe{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.reciep-video{
+    display: flex; 
+    justify-content: center;
+}
+iframe{
+    width: 500px;
+    height: 300px;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .title-reciepe{
+        font-size: 1rem;
+        padding-top: 25px;
+    }
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:375px){
+    .title-reciepe{
+        font-size: 1rem;
+        padding-top: 25px;
+    }
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+    .title-reciepe{
+        font-size: 1rem;
+        padding-top: 25px;
+    }
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px){
+    .title-reciepe{
+        font-size: 1.2rem;
+        padding-top: 25px;
+    }
+    
+}
